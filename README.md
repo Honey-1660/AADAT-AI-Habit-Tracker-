@@ -1,63 +1,75 @@
 # 🚀 AADAT - AI Habit Tracker
 
-AADAT is a modern **AI-powered habit tracking desktop application** designed to help users build, monitor, and improve their daily habits. It combines clean UI, smart tracking, and intelligent insights to enhance productivity and personal growth.
+AADAT is a modern **AI-powered desktop application** that helps users track habits, analyze behavior, and improve productivity using intelligent insights.
 
 ---
 
 ## ✨ Features
 
-* 📊 Track daily habits easily
-* 🤖 AI-based behavior insights
-* 📈 Visual progress monitoring
-* 🧠 Smart recommendations
-* 🎯 Goal setting and tracking
-* 💻 Clean and modern desktop UI
-* ⚡ Fast and lightweight performance
+* 📊 Daily habit tracking
+* 🤖 AI-based insights & analysis
+* 📈 Progress visualization
+* 🎯 Goal setting system
+* 💻 Clean and modern UI
+* ⚡ Fast and lightweight
 
 ---
 
-## 🛠️ Tech Stack
+## 🖥️ Supported Platforms
 
-* **Python**
-* **Tkinter (GUI)**
-* **Machine Learning (Basic AI Logic)**
-* **PyInstaller (App Packaging)**
+* 🍎 macOS (DMG Installer)
+* 🪟 Windows (EXE Installer)
 
 ---
 
-## 📂 Project Structure
+## 📦 Installation
 
-```
-AADAT/
-│
-├── dist/                  # Built application
-├── build/                 # Build files
-├── assets/                # Icons, images, UI assets
-├── data/                  # User data / storage
-├── main.py                # Main application file
-├── requirements.txt       # Dependencies
-├── AADAT.spec            # PyInstaller config
-├── icon.icns              # macOS app icon
-├── background.png         # DMG installer background
-└── README.md
-```
-
----
-
-## ⚙️ Installation (macOS)
-
-### 📦 Using DMG Installer
+### 🍎 macOS Installation
 
 1. Download `AADAT.dmg`
 2. Open the DMG file
 3. Drag **AADAT.app → Applications**
 4. Launch from Applications
 
+⚠️ First time:
+
+* Right click → Open → Allow
+
 ---
 
-## 🖥️ Run from Source
+### 🪟 Windows Installation
 
-```bash
+1. Download `AADAT_setup.exe`
+2. Double click the installer
+3. Follow on-screen instructions
+4. Launch AADAT from desktop or start menu
+
+---
+
+## 📂 Project Structure
+
+```id="proj2"
+AADAT/
+│
+├── dist/                  # Built app (macOS)
+├── build/                 # Build files
+├── assets/                # Icons & UI assets
+├── data/                  # App data
+├── main.py                # Main application
+├── requirements.txt       # Dependencies
+├── AADAT.spec             # PyInstaller config
+├── AADAT_setup.exe        # Windows installer
+├── AADAT.dmg              # macOS installer
+├── icon.icns              # macOS icon
+├── background.png         # DMG background
+└── README.md
+```
+
+---
+
+## ⚙️ Run from Source
+
+```bash id="run2"
 git clone https://github.com/your-username/AADAT.git
 cd AADAT
 pip install -r requirements.txt
@@ -66,29 +78,53 @@ python main.py
 
 ---
 
-## 🏗️ Build macOS App
+## 🏗️ Build Application
 
-```bash
+### macOS (DMG)
+
+```bash id="mac2"
 pyinstaller AADAT.spec
 ```
 
 ---
 
-## 📌 Notes
+### Windows (EXE)
 
-* First launch may require:
+```bash id="win2"
+pyinstaller main.py --onefile --windowed
+```
 
-  * Right click → Open → Allow
-* Works on Intel Mac (x86_64)
-* For best performance, use latest Python version
+Or using installer:
+
+```text id="inno"
+AADAT_installer.iss (Inno Setup)
+```
+
+---
+
+## 📸 Screenshots
+
+*Add your app screenshots here*
+## 📸 App Preview
+<img width="1536" height="960" alt="Screenshot 2026-04-17 at 9 25 11 PM" src="https://github.com/user-attachments/assets/ad86d6de-1c0e-4ae8-95c7-c09ce9e5cec7" />
+
+
+## 📸 App Settings 
+<img width="1536" height="960" alt="Screenshot 2026-04-17 at 9 26 03 PM" src="https://github.com/user-attachments/assets/7cf594f8-cd41-48eb-933a-2d175790deaa" />
+## 📸 App Analysis 
+<img width="1536" height="960" alt="Screenshot 2026-04-17 at 9 25 43 PM" src="https://github.com/user-attachments/assets/ff568836-55ff-472f-aad0-25559031cac5" />
+## 📸 App habit  Tracker 
+<img width="1536" height="960" alt="Screenshot 2026-04-17 at 9 20 38 PM" src="https://github.com/user-attachments/assets/a35efa32-8e23-43e5-83dd-516dd13d48ca" />
+
+```
 
 ---
 
 ## 🎯 Future Improvements
 
-* 🔥 Cloud sync
+* ☁️ Cloud sync
 * 📱 Mobile version
-* 🤖 Advanced AI predictions
+* 🤖 Advanced AI features
 * 🌐 Web dashboard
 
 ---
@@ -96,22 +132,23 @@ pyinstaller AADAT.spec
 ## 🤝 Contributing
 
 Contributions are welcome!
-Feel free to fork the repo and submit pull requests.
+Feel free to fork and submit pull requests.
 
 ---
 
 ## 📄 License
 
-This project is open-source and available under the **MIT License**.
+MIT License
 
 ---
 
-## 💡 Author
+## 👩‍💻 Author
 
 **Madhu Sarkar**
-MSc Computer Science Student
-Passionate about AI, Cloud, and App Development
+MSc Computer Science
+AI • Cloud • App Development
 
 ---
 
-⭐ If you like this project, give it a star on GitHub!
+⭐ Star this repo if you like the project!
+
