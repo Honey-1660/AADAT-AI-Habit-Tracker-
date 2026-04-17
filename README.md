@@ -145,7 +145,7 @@ MIT License
 ## 👩‍💻 Author
 
 **Madhu Sarkar**
-MSc Computer Science
+MSc Computer Science (Honey)
 AI • Cloud • App Development
 
 ---
